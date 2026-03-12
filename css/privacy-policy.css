@@ -1,0 +1,205 @@
+/* ── HEADER ─────────────────────────────── */
+.page-header {
+  border-bottom: 1px solid var(--border);
+  padding: 3rem 2rem 2.5rem;
+}
+
+.page-header-container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--accent); }
+.back-arrow { font-size: 0.85rem; }
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.section-head-num {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+}
+
+.section-head-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--text);
+}
+
+.section-head-line {
+  flex: 1;
+  border: none;
+  border-top: 1px solid var(--border);
+  margin-left: 0.5rem;
+}
+
+.page-meta {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+/* ── MAIN ────────────────────────────────── */
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 3rem 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── POLICY SECTIONS ─────────────────────── */
+.policy-section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.policy-section:last-child { border-bottom: none; }
+
+.policy-title {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.policy-title-slash {
+  color: var(--accent);
+  font-weight: 300;
+}
+
+.policy-section p {
+  font-size: 0.92rem;
+  color: var(--text-mid);
+  margin-bottom: 0.9rem;
+  line-height: 1.8;
+}
+.policy-section p:last-child { margin-bottom: 0; }
+
+.policy-section p strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.policy-section ul {
+  list-style: none;
+  margin: 0.75rem 0 0.9rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.policy-section ul li {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.7;
+}
+.policy-section ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  top: 0.15em;
+}
+
+.policy-section ul li strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* highlight box — Formspree note */
+.highlight-box {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  line-height: 1.75;
+  font-family: var(--mono);
+}
+
+/* inline links */
+.inline-link,
+.policy-section a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(200, 240, 96, 0.3);
+  transition: border-color 0.2s;
+}
+.inline-link:hover,
+.policy-section a:hover {
+  border-color: var(--accent);
+}
+
+/* ── FOOTER ──────────────────────────────── */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.75rem 2rem;
+}
+
+.site-footer-container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.site-footer-left,
+.site-footer-right {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.site-footer-accent {
+  color: var(--accent);
+}
+
+/* ── RESPONSIVE ──────────────────────────── */
+@media (max-width: 600px) {
+  .page-header { padding: 2rem 1.25rem 2rem; }
+  main { padding: 2rem 1.25rem 4rem; }
+  .section-head { flex-wrap: wrap; }
+  .section-head-line { display: none; }
+  .site-footer { padding: 1.5rem 1.25rem; }
+  .site-footer-container { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+}
