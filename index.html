@@ -1,314 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Federica</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Federica</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-    
-<nav id="nav">
-  <a href="#" class="nav-logo">fr.dev</a>
-  <ul class="nav-links">
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <button class="hamburger" id="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#projects" class="mobile-link">Projects</a>
-  <a href="#about" class="mobile-link">About</a>
-  <a href="#contact" class="mobile-link">Contact</a>
-</div>
+  <nav id="nav">
+    <a href="#" class="nav-logo">fr.dev</a>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-left fade-up">
-    <div class="hero-tag">Junior Full Stack Developer</div>
-    <h1>Imparo<br><em>costruendo.</em></h1>
-    <p class="hero-desc">
-      Mi interessa il full stack: dall'interfaccia al database, cercando di capire come funziona ogni pezzo.
-    </p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn-primary">Vedi i progetti →</a>
-      <a href="#contact" class="btn-ghost">Contatti</a>
-    </div>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#contact" class="mobile-link">Contact</a>
   </div>
 
-  <div class="hero-terminal fade-up">
-    <div class="terminal-bar">
-      <div class="dot dot-r"></div>
-      <div class="dot dot-y"></div>
-      <div class="dot dot-g"></div>
-      <span class="terminal-title">federica.json</span>
-    </div>
-    <div class="terminal-body">
-      <div class="t-line"><span class="prompt">$</span><span class="cmd">cat federica.json</span></div>
-      <div class="t-output">
-        <div class="t-line"><span class="t-arr">{</span></div>
-        <div class="t-line">&nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-str">"open to opportunities"</span>,</div>
-        <div class="t-line">&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-str">"Bologna, IT"</span>,</div>
-        <div class="t-line">&nbsp;&nbsp;<span class="t-key">"focus"</span>: <span class="t-str">"full stack"</span>,</div>
-        <div class="t-line">&nbsp;&nbsp;<span class="t-key">"stack"</span>: <span class="t-arr">[</span></div>
-        <div class="t-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"HTML/CSS/SASS"</span>, <span class="t-str">"JS"</span>,</div>
-        <div class="t-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"PHP"</span>, <span class="t-str">"MySQL"</span></div>
-        <div class="t-line">&nbsp;&nbsp;<span class="t-arr">]</span>,</div>
-        <div class="t-line">&nbsp;&nbsp;<span class="t-key">"last_update"</span>: <span class="t-str">"2026-03-07"</span></div>
-        <div class="t-line"><span class="t-arr">}</span></div>
-      </div>
-      <div class="t-line"><span class="prompt">$</span> <span class="t-cursor"></span></div>
-    </div>
-  </div>
-</div>
-
-<!-- TICKER -->
-<div class="ticker-wrap">
-  <div class="ticker">
-    <div class="ticker-item"><span>✦</span> HTML5 / CSS3</div>
-    <div class="ticker-item"><span>✦</span> JavaScript ES6+</div>
-    <div class="ticker-item"><span>✦</span> React</div>
-    <div class="ticker-item"><span>✦</span> PHP 8</div>
-    <div class="ticker-item"><span>✦</span> MySQL</div>
-    <div class="ticker-item"><span>✦</span> Laravel</div>
-    <div class="ticker-item"><span>✦</span> Git / GitHub</div>
-    <div class="ticker-item"><span>✦</span> REST API</div>
-    <div class="ticker-item"><span>✦</span> n8n Automations</div>
-    <div class="ticker-item"><span>✦</span> Responsive Design</div>
-    <!-- duplicate for seamless loop -->
-    <div class="ticker-item"><span>✦</span> HTML5 / CSS3</div>
-    <div class="ticker-item"><span>✦</span> JavaScript ES6+</div>
-    <div class="ticker-item"><span>✦</span> React</div>
-    <div class="ticker-item"><span>✦</span> PHP 8</div>
-    <div class="ticker-item"><span>✦</span> MySQL</div>
-    <div class="ticker-item"><span>✦</span> Laravel</div>
-    <div class="ticker-item"><span>✦</span> Git / GitHub</div>
-    <div class="ticker-item"><span>✦</span> REST API</div>
-    <div class="ticker-item"><span>✦</span> n8n Automations</div>
-    <div class="ticker-item"><span>✦</span> Responsive Design</div>
-  </div>
-</div>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-label">Progetti</div>
-  <h2>Cosa ho <em style="font-style:italic; color:var(--accent)">costruito</em></h2>
-
-  <div class="projects-grid">
-
-    <!-- Project 1 -->
-    <div class="project-card fade-up">
-      <div>
-        <div class="project-num">01 — Auth & Security</div>
-        <div class="project-title">AuthLab</div>
-        <p class="project-desc">
-          Sistema completo di autenticazione con registrazione, login, gestione sessioni e dashboard protetta. Costruito per capire davvero come funziona la sicurezza lato server, non solo copiare un tutorial.
-        </p>
-        <p class="project-problem">
-          "Come si previene un SQL injection? Come si gestisce una sessione in modo sicuro?" — Ho risposto costruendo.
-        </p>
-        <div class="project-tags">
-          <span class="tag highlight">PHP 8</span>
-          <span class="tag highlight">MySQL</span>
-          <span class="tag">PDO</span>
-          <span class="tag">Session Management</span>
-          <span class="tag">Server-side Validation</span>
-        </div>
-      </div>
-      <div class="project-links">
-        <a href="#" class="project-link">
-          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-          GitHub
-        </a>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="project-card fade-up">
-      <div>
-        <div class="project-num">02 — API Integration</div>
-        <div class="project-title">NASA Data Explorer</div>
-        <p class="project-desc">
-          App frontend data-driven che integra le API di NASA (APOD e Mars Weather) con rendering dinamico, modale e visualizzazione dati via Google Charts. Zero framework, JavaScript puro — per capire il DOM prima di delegarlo a React.
-        </p>
-        <p class="project-problem">
-          "Come si consumano API esterne? Come si rendono i dati in modo leggibile senza un framework?" — Risposta pratica.
-        </p>
-        <div class="project-tags">
-          <span class="tag highlight">JavaScript</span>
-          <span class="tag highlight">Fetch API</span>
-          <span class="tag">NASA API</span>
-          <span class="tag">Google Charts</span>
-          <span class="tag">DOM Manipulation</span>
-        </div>
-      </div>
-      <div class="project-links">
-        <a href="#" class="project-link">
-          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-          GitHub
-        </a>
-        <a href="#" class="project-link">
-          ↗ Live
-        </a>
-      </div>
-    </div>
-
-    <!-- Project 3 — WIP -->
-    <div class="project-card fade-up">
-      <div>
-        <div class="project-num" style="display:flex; align-items:center; gap:0.75rem;">03 — Automation + API <span class="wip">In corso</span></div>
-        <div class="project-title">InfoBite</div>
-        <p class="project-desc">
-          Digest quotidiano di notizie tech e AI, costruito con un workflow n8n che aggrega 8 feed RSS, filtra le ultime 24 ore per tema, e genera ogni mattina una pagina Notion strutturata. Frontend in JavaScript per consumare le API Notion e renderlo accessibile via browser.
-        </p>
-        <p class="project-problem">
-          "Come si automatizza un flusso di dati reale? Come si espone un'automazione tramite API?" — Progetto in produzione, non esercizio.
-        </p>
-        <div class="project-tags">
-          <span class="tag highlight">n8n</span>
-          <span class="tag highlight">Notion API</span>
-          <span class="tag">RSS Aggregation</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">Automation</span>
-        </div>
-      </div>
-      <div class="project-links">
-        <a href="#" class="project-link">
-          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-          GitHub
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<div class="full-divider"></div>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-label">Chi sono</div>
-  <h2>Teoria + <em style="font-style:italic; color:var(--accent)">pratica.</em></h2>
-
-  <div class="about-grid">
-    <div class="about-text fade-up">
-      <p>
-        Sono una sviluppatrice junior, fresca di formazione e con ancora tanto da imparare. Ho costruito questo portfolio e i progetti che vedi <strong>partendo da zero</strong>, con curiosità e molta pratica.
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-left fade-up">
+      <div class="hero-tag">Junior Full Stack Developer</div>
+      <h1>Imparo<br><em>costruendo.</em></h1>
+      <p class="hero-desc">
+        Mi interessa il full stack: dall'interfaccia al database, cercando di capire come funziona ogni pezzo.
       </p>
-      <p>
-        Mi interessa il full stack — dall'organizzazione del database a come si presenta un'interfaccia. Non ho esperienza in azienda ancora, ma so lavorare su un problema <strong>finché non lo capisco davvero</strong>.
-      </p>
-      <p>
-        Sto cercando un contesto in cui crescere, fare domande e contribuire anche con poco all'inizio.
-      </p>
-      <div style="margin-top: 2rem; padding: 1.5rem; border: 1px solid var(--border); background: var(--surface);">
-        <div class="skill-group-title">// Principles</div>
-        <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.75rem;">
-          <span style="font-size: 0.88rem; color: var(--text-mid);">→ Imparare prima di ottimizzare</span>
-          <span style="font-size: 0.88rem; color: var(--text-mid);">→ Chiedere quando sono bloccata</span>
-          <span style="font-size: 0.88rem; color: var(--text-mid);">→ Capire il perché, non solo il come</span>
-          <span style="font-size: 0.88rem; color: var(--text-mid);">→ Costruire, rompere, riprovare</span>
-        </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">Vedi i progetti →</a>
+        <a href="#contact" class="btn-ghost">Contatti</a>
       </div>
     </div>
 
-    <div class="about-skills fade-up">
-      <div>
-        <div class="skill-group-title">Frontend</div>
-        <div class="skill-list">
-          <span class="skill-pill">HTML5</span>
-          <span class="skill-pill">CSS3 / SASS</span>
-          <span class="skill-pill">JavaScript ES6+</span>
-          <span class="skill-pill">React</span>
-          <span class="skill-pill">Bootstrap 5</span>
-          <span class="skill-pill">Tailwind CSS</span>
-        </div>
+    <div class="hero-terminal fade-up">
+      <div class="terminal-bar">
+        <div class="dot dot-r"></div>
+        <div class="dot dot-y"></div>
+        <div class="dot dot-g"></div>
+        <span class="terminal-title">federica.json</span>
       </div>
-      <div>
-        <div class="skill-group-title">Backend</div>
-        <div class="skill-list">
-          <span class="skill-pill">PHP 8</span>
-          <span class="skill-pill">MySQL</span>
-          <span class="skill-pill">Laravel</span>
-          <span class="skill-pill">PDO</span>
-          <span class="skill-pill">REST API</span>
+      <div class="terminal-body">
+        <div class="t-line"><span class="prompt">$</span><span class="cmd">cat federica.json</span></div>
+        <div class="t-output">
+          <div class="t-line"><span class="t-arr">{</span></div>
+          <div class="t-line">&nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-str">"open to
+              opportunities"</span>,</div>
+          <div class="t-line">&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-str">"Bologna,
+              IT"</span>,</div>
+          <div class="t-line">&nbsp;&nbsp;<span class="t-key">"focus"</span>: <span class="t-str">"full stack"</span>,
+          </div>
+          <div class="t-line">&nbsp;&nbsp;<span class="t-key">"stack"</span>: <span class="t-arr">[</span></div>
+          <div class="t-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"HTML/CSS/SASS"</span>, <span
+              class="t-str">"JS"</span>,</div>
+          <div class="t-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"PHP"</span>, <span
+              class="t-str">"MySQL"</span></div>
+          <div class="t-line">&nbsp;&nbsp;<span class="t-arr">]</span>,</div>
+          <div class="t-line">&nbsp;&nbsp;<span class="t-key">"last_update"</span>: <span
+              class="t-str">"2026-03-07"</span></div>
+          <div class="t-line"><span class="t-arr">}</span></div>
         </div>
-      </div>
-      <div>
-        <div class="skill-group-title">Tooling & Altro</div>
-        <div class="skill-list">
-          <span class="skill-pill">Git / GitHub</span>
-          <span class="skill-pill">n8n</span>
-          <span class="skill-pill">Notion API</span>
-          <span class="skill-pill">Vercel</span>
-          <span class="skill-pill">GitHub Pages</span>
-        </div>
+        <div class="t-line"><span class="prompt">$</span> <span class="t-cursor"></span></div>
       </div>
     </div>
   </div>
-</section>
 
-<div class="full-divider"></div>
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <div class="ticker-item"><span>✦</span> HTML5 / CSS3</div>
+      <div class="ticker-item"><span>✦</span> JavaScript ES6+</div>
+      <div class="ticker-item"><span>✦</span> React</div>
+      <div class="ticker-item"><span>✦</span> PHP 8</div>
+      <div class="ticker-item"><span>✦</span> MySQL</div>
+      <div class="ticker-item"><span>✦</span> Laravel</div>
+      <div class="ticker-item"><span>✦</span> Git / GitHub</div>
+      <div class="ticker-item"><span>✦</span> REST API</div>
+      <div class="ticker-item"><span>✦</span> n8n Automations</div>
+      <div class="ticker-item"><span>✦</span> Responsive Design</div>
+      <!-- duplicate for seamless loop -->
+      <div class="ticker-item"><span>✦</span> HTML5 / CSS3</div>
+      <div class="ticker-item"><span>✦</span> JavaScript ES6+</div>
+      <div class="ticker-item"><span>✦</span> React</div>
+      <div class="ticker-item"><span>✦</span> PHP 8</div>
+      <div class="ticker-item"><span>✦</span> MySQL</div>
+      <div class="ticker-item"><span>✦</span> Laravel</div>
+      <div class="ticker-item"><span>✦</span> Git / GitHub</div>
+      <div class="ticker-item"><span>✦</span> REST API</div>
+      <div class="ticker-item"><span>✦</span> n8n Automations</div>
+      <div class="ticker-item"><span>✦</span> Responsive Design</div>
+    </div>
+  </div>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-label">Contatti</div>
-  <h2>Parliamo di <em style="font-style:italic; color:var(--accent)">qualcosa.</em></h2>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">Progetti</div>
+    <h2>Cosa ho <em style="font-style:italic; color:var(--accent)">costruito</em></h2>
 
-  <div class="contact-inner">
-    <div class="contact-text fade-up">
-      <p>
-        Hai un'opportunità da proporre? Compila il form o contattami direttamente sui social.
-      </p>
-      <div class="contact-links">
-        <a href="https://github.com/FedericaRoti" class="contact-link" target="_blank">
-          <span class="contact-link-icon">⌥</span> github.com/FedericaRoti
-        </a>
-        <a href="https://linkedin.com/in/federicarotiroti" class="contact-link" target="_blank">
-          <span class="contact-link-icon">↗</span> linkedin.com/in/federicarotiroti
-        </a>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card fade-up">
+        <div>
+          <div class="project-num">01 — Auth & Security</div>
+          <div class="project-title">AuthLab</div>
+          <p class="project-desc">
+            Sistema completo di autenticazione con registrazione, login, gestione sessioni e dashboard protetta.
+            Costruito per capire davvero come funziona la sicurezza lato server, non solo copiare un tutorial.
+          </p>
+          <p class="project-problem">
+            "Come si previene un SQL injection? Come si gestisce una sessione in modo sicuro?" — Ho risposto costruendo.
+          </p>
+          <div class="project-tags">
+            <span class="tag highlight">PHP 8</span>
+            <span class="tag highlight">MySQL</span>
+            <span class="tag">PDO</span>
+            <span class="tag">Session Management</span>
+            <span class="tag">Server-side Validation</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/FedericaRoti/authlab.git" class="project-link">
+            <svg viewBox="0 0 16 16" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card fade-up">
+        <div>
+          <div class="project-num">02 — API Integration</div>
+          <div class="project-title">NASA Data Explorer</div>
+          <p class="project-desc">
+            App frontend data-driven che integra le API di NASA (APOD e Mars Weather) con rendering dinamico, modale e
+            visualizzazione dati via Google Charts. Zero framework, JavaScript puro — per capire il DOM prima di
+            delegarlo a React.
+          </p>
+          <p class="project-problem">
+            "Come si consumano API esterne? Come si rendono i dati in modo leggibile senza un framework?" — Risposta
+            pratica.
+          </p>
+          <div class="project-tags">
+            <span class="tag highlight">JavaScript</span>
+            <span class="tag highlight">Fetch API</span>
+            <span class="tag">NASA API</span>
+            <span class="tag">Google Charts</span>
+            <span class="tag">DOM Manipulation</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/FedericaRoti/nasaDataExplorer.git" class="project-link">
+            <svg viewBox="0 0 16 16" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 3 — WIP -->
+      <div class="project-card fade-up">
+        <div>
+          <div class="project-num" style="display:flex; align-items:center; gap:0.75rem;">03 — Automation + API <span
+              class="wip">In corso</span></div>
+          <div class="project-title">InfoBite</div>
+          <p class="project-desc">
+            Digest quotidiano di notizie tech e AI, costruito con un workflow n8n che aggrega 8 feed RSS, filtra le
+            ultime 24 ore e genera ogni mattina una pagina Notion strutturata. Un frontend React + Vite consuma l'API
+            Notion tramite serverless functions Vercel e li rende liggibili via browser.
+          </p>
+          <p class="project-problem">
+            "Come si automatizza un flusso di dati reale e lo si espone come prodotto?" — Dati reali, deploy reale,
+            nessun tutorial.
+          </p>
+          <div class="project-tags">
+            <span class="tag highlight">n8n</span>
+            <span class="tag highlight">Notion API</span>
+            <span class="tag highlight">React</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Vercel</span>
+            <span class="tag">RSS Aggregation</span>
+            <span class="tag">Serverless</span>
+            <span class="tag">Automation</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/FedericaRoti/InfoBIte.git" class="project-link">
+            <svg viewBox="0 0 16 16" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+            GitHub
+          </a>
+          <a href="https://infobite-theta.vercel.app/" class="project-link">
+            ↗ Live
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">Chi sono</div>
+    <h2>Teoria + <em style="font-style:italic; color:var(--accent)">pratica.</em></h2>
+
+    <div class="about-grid">
+      <div class="about-text fade-up">
+        <p>
+          Sono una sviluppatrice junior, fresca di formazione e con ancora tanto da imparare. Ho costruito questo
+          portfolio e i progetti che vedi <strong>partendo da zero</strong>, con curiosità e molta pratica.
+        </p>
+        <p>
+          Mi interessa il full stack — dall'organizzazione del database a come si presenta un'interfaccia. Non ho
+          esperienza in azienda ancora, ma so lavorare su un problema <strong>finché non lo capisco davvero</strong>.
+        </p>
+        <p>
+          Sto cercando un contesto in cui crescere, fare domande e contribuire anche con poco all'inizio.
+        </p>
+        <div style="margin-top: 2rem; padding: 1.5rem; border: 1px solid var(--border); background: var(--surface);">
+          <div class="skill-group-title">// Principles</div>
+          <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.75rem;">
+            <span style="font-size: 0.88rem; color: var(--text-mid);">→ Imparare prima di ottimizzare</span>
+            <span style="font-size: 0.88rem; color: var(--text-mid);">→ Chiedere quando sono bloccata</span>
+            <span style="font-size: 0.88rem; color: var(--text-mid);">→ Capire il perché, non solo il come</span>
+            <span style="font-size: 0.88rem; color: var(--text-mid);">→ Costruire, rompere, riprovare</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-skills fade-up">
+        <div>
+          <div class="skill-group-title">Frontend</div>
+          <div class="skill-list">
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3 / SASS</span>
+            <span class="skill-pill">JavaScript ES6+</span>
+            <span class="skill-pill">React</span>
+            <span class="skill-pill">Bootstrap 5</span>
+            <span class="skill-pill">Tailwind CSS</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-title">Backend</div>
+          <div class="skill-list">
+            <span class="skill-pill">PHP 8</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">Laravel</span>
+            <span class="skill-pill">PDO</span>
+            <span class="skill-pill">REST API</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-title">Tooling & Altro</div>
+          <div class="skill-list">
+            <span class="skill-pill">Git / GitHub</span>
+            <span class="skill-pill">n8n</span>
+            <span class="skill-pill">Notion API</span>
+            <span class="skill-pill">Vercel</span>
+            <span class="skill-pill">GitHub Pages</span>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <form class="contact-form fade-up" action="https://formspree.io/f/xreykkzw" method="POST">
-      <div class="form-group">
-        <label for="name">Nome</label>
-        <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="tua@email.com" required>
-      </div>
-      <div class="form-group">
-        <label for="message">Messaggio</label>
-        <textarea id="message" name="message" placeholder="Di cosa vuoi parlare?" required></textarea>
-      </div>
-      <div class="form-privacy">
-        <input type="checkbox" id="privacy" name="privacy" required>
-        <label for="privacy">
-          Ho letto e accetto la <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
-        </label>
-      </div>
-      <button type="submit" class="btn-primary btn-submit">Invia →</button>
-    </form>
-  </div>
-</section>
+  <div class="full-divider"></div>
 
-<!-- FOOTER -->
-<div class="full-divider"></div>
-<footer>
-  <p>© 2026 Federica Rotiroti — Built with focus.</p>
-  <div class="footer-status">
-    <div class="status-dot"></div>
-    Open to opportunities
-  </div>
-</footer>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">Contatti</div>
+    <h2>Parliamo di <em style="font-style:italic; color:var(--accent)">qualcosa.</em></h2>
+
+    <div class="contact-inner">
+      <div class="contact-text fade-up">
+        <p>
+          Hai un'opportunità da proporre? Compila il form o contattami direttamente sui social.
+        </p>
+        <div class="contact-links">
+          <a href="https://github.com/FedericaRoti" class="contact-link" target="_blank">
+            <span class="contact-link-icon">⌥</span> github.com/FedericaRoti
+          </a>
+          <a href="https://linkedin.com/in/federicarotiroti" class="contact-link" target="_blank">
+            <span class="contact-link-icon">↗</span> linkedin.com/in/federicarotiroti
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form fade-up" action="https://formspree.io/f/xreykkzw" method="POST">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tua@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Messaggio</label>
+          <textarea id="message" name="message" placeholder="Di cosa vuoi parlare?" required></textarea>
+        </div>
+        <div class="form-privacy">
+          <input type="checkbox" id="privacy" name="privacy" required>
+          <label for="privacy">
+            Ho letto e accetto la <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+          </label>
+        </div>
+        <button type="submit" class="btn-primary btn-submit">Invia →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="full-divider"></div>
+  <footer>
+    <p>© 2026 Federica Rotiroti — Built with focus.</p>
+    <div class="footer-status">
+      <div class="status-dot"></div>
+      Open to opportunities
+    </div>
+  </footer>
 </body>
+
 </html>
